@@ -1,0 +1,8 @@
+.app.dark {
+    --background-color: #000;
+    --text-color: #fff;
+    --border-color: #d21569;
+    --btn-text-color: #000;
+    --card-back: rgba(255, 255, 255, 0.06);
+    --card-back-hover: rgba(255, 255, 255, 0.2);
+}

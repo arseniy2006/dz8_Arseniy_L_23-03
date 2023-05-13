@@ -1,0 +1,8 @@
+.app.light {
+    --background-color: #ffffff;
+    --text-color: #000;
+    --border-color: #000;
+    --btn-text-color: #fff;
+    --card-back: rgba(0, 0, 0, 0.06);
+    --card-back-hover: rgba(0, 0, 0, 0.15);
+}

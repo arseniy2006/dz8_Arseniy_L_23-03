@@ -1,0 +1,243 @@
+@import './theme/dark.css';
+@import './theme/light.css';
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pokemonCard {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  background: var(--card-back);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.pokemonCard:hover {
+  background: var(--card-back-hover);
+  filter: contrast(1.1);
+  transition: 200ms;
+}
+
+.pokemonCard:active {
+  filter: contrast(0.9);
+  transition: 200ms;
+}
+
+
+
+.pokemonCard::after {
+  animation: clippath 34s infinite -17s linear;
+}
+
+@keyframes clippath { 0%,
+100% {clip-path: inset(0 0 98% 0);}
+  25% {clip-path: inset(0 98% 0 0);}
+  50% {clip-path: inset(98% 0 0 0);}
+  75% {clip-path: inset(0 0 0 98%);}
+}
+
+.pokemonCard:hover {
+  transition: 200ms;
+  transform: scale(0.95);
+}
+
+.pokemonCard > img {
+  width: 155px;
+  height: 155px;
+}
+
+.pokemonList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding-bottom: 60px;
+}
+
+.themeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+  background: none;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  transition: 200ms;
+}
+
+.themeBtn:active {
+  transform: translateY(3px);
+  transition: 200ms;
+}
+
+.pokemonName {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.pokemonName:first-letter {
+  text-transform: uppercase;
+}
+
+.btnBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 30px;
+}
+
+.btnBox > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+  background: none;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  transition: 200ms;
+}
+
+
+
+.btnBox > button:active {
+  transform: translateY(3px);
+  transition: 200ms;
+}
+
+.btnBox > h2 {
+  font-family: sans-serif;
+}
+
+.pokemon {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pokemonInfo {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  border-radius: 10px;
+  background: var(--card-back);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.pokemonInfo:hover {
+  background: var(--card-back-hover);
+  filter: contrast(1.1);
+  transition: 200ms;
+}
+
+.pokemonInfo:active {
+  filter: contrast(0.9);
+  transition: 200ms;
+}
+
+
+.pokemonInfo::after {
+  animation: clippath 34s infinite -17s linear;
+}
+
+
+
+.pokemonInfo:hover {
+  transition: 200ms;
+  transform: scale(0.95);
+}
+
+.pokemonInfo > img {
+  width: 200px;
+  height: 200px;
+}
+
+.pokemonInfo > .pokemonName {
+  font-size: 30px;
+}
+
+.pokeInfo {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.pokeContent {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 50px;
+}
+
+.linkBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+  background: none;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  transition: 200ms;
+}
+
+.linkBtn:hover {
+  background: var(--border-color);
+  color: var(--btn-text-color);
+  transition: 200ms;
+}
+
+.linkBtn:active {
+  transform: translateY(3px);
+  transition: 200ms;
+}
+
+.pokeStatsInfo {
+  width: 250px;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-size: 25px;
+  background: var(--border-color);
+  color: var(--btn-text-color);
+}
+
+.pokeStatsInfo:first-letter {
+  text-transform: uppercase;
+}
